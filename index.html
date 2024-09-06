@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="calculadora">
+        <div id="display">
+            <input type="text" class="display" id="displayInput" disabled>
+        </div>
+        <div id="buttons">
+            <button class="encendido" id="encendido" onclick="encender()"> On/Off</button>
+            <button class="symbol" onclick="clearAll()">C</button>
+            <button class="symbol" onclick="displayValue('%')">%</button>
+            <button class="symbol" onclick="deleteLast()">←</button>
+            <button class="number" onclick="displayValue('7')">7</button>
+            <button class="number" onclick="displayValue('8')">8</button>
+            <button class="number" onclick="displayValue('9')">9</button>
+            <button class="symbol" onclick="displayValue('/')">÷</button>
+            <button class="number" onclick="displayValue('4')">4</button>
+            <button class="number" onclick="displayValue('5')">5</button>
+            <button class="number" onclick="displayValue('6')">6</button>
+            <button class="symbol" onclick="displayValue('*')">*</button>
+            <button class="number" onclick="displayValue('1')">1</button>
+            <button class="number" onclick="displayValue('2')">2</button>
+            <button class="number" onclick="displayValue('3')">3</button>
+            <button class="symbol" onclick="displayValue('-')">-</button>
+            <button class="number" onclick="displayValue('0')">0</button>
+            <button class="number" onclick="displayValue('.')">.</button>
+            <button class="symbol" onclick="displayValue('+')">+</button>
+            <button class="symbol" onclick="calcularResultado()">=</button>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
